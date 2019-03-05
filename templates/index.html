@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="/static/jquery-3.3.1.min.js"></script>
+    <!-- 引入百度地图开发者api -->
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=YugmInOKVc8g8NKIFI6Blh6NIVGEGihv"></script>
+    <script src="/static/echarts.min.js"></script>
+    <!-- 引入echart GL用于绘制三维图表 -->
+    <script src="/static/echarts-gl.min.js"></script>
+    <!-- 引入主题，然后再script中init时直接设置主题名即可 -->
+    <script src="/static/theme/vintage.js"></script>
+    <!-- 地图组件强烈建议使用bmap，直接在这里引入bmap组件 -->
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+
+
+    <!-- Echarts官网的案例中，关于地图的案例必须要引入地图多边形的js文件才能运行，也就是本地的china.js和world.js。但其多边形文件非常粗糙，不建议使用 -->
+    <!-- <script src="/static/china.js"></script> -->
+
+</head>
+<body>
+    <div id="main" style="width: 1000px; height: 600px;"></div>
+
+    <!-- 这里根据需要使用对应的图表demo的js文件，存储在demo目录中，在first_demo.js中有一些基础配置设置，如主题、下载要素等 -->
+    <script type="text/javascript" src="/static/demo/3d_scatter.js"></script>
+</body>
+</html>
